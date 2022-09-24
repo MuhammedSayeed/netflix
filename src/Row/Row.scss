@@ -1,0 +1,121 @@
+
+
+*{
+    text-decoration: none !important;
+}
+h2{
+    margin-bottom:none !important;
+    color: rgb(223, 223, 223) !important;
+}
+
+
+    .posterOfMovie {
+        
+        width: 350px;
+        height: 200px;
+        background-position: center center;
+        background-size: cover;
+        transition: all ease-in-out .5s;
+
+        img{
+            width:100%;
+        }
+        
+
+        .overlay-black{
+            background: rgb(9,9,9);
+            background: -moz-linear-gradient(0deg, rgba(9,9,9,1) 20%, rgba(9,9,9,0) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(9,9,9,1) 20%, rgba(9,9,9,0) 100%);
+            background: linear-gradient(0deg, rgba(9,9,9,1) 20%, rgba(9,9,9,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090909",endColorstr="#090909",GradientType=1);
+            width: 350px;
+            height: 200px;
+            padding: 0px 10px;
+            display: flex!important;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 10px !important;
+            display: none !important;
+            transition: all ease-in-out .5s !important;
+            position: absolute;
+            bottom: 0;
+            .colm_properties{
+                
+                .icon{
+                    background: rgba(0, 0, 0, 0.644);
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    margin-bottom: 7px !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgb(245, 245, 245);
+                    cursor: pointer;
+                    
+
+                    i{
+                        color:rgb(245, 245, 245);
+                        
+                    }
+                }
+
+                
+            }
+
+            .content-name{
+                
+                
+                
+                
+                
+                h5{
+                    color:rgb(245, 245, 245);
+                    font-size: 1.2rem;
+                    
+                }
+                p{
+                    color:rgb(209, 209, 209);
+                    
+                }
+            }
+        }
+       
+
+        &:hover {
+            transform: scale(1.2);
+            position: absolute !important;
+            
+
+        }
+        &:hover .overlay-black {
+            
+            display: flex !important;
+
+        }
+    }
+
+
+
+    
+
+.swiper-wrapper{
+    padding-top: 34px;
+    padding-bottom: 34px;
+    display: flex !important;
+    margin: auto !important;
+   
+
+}
+
+.swiper-button-prev{
+
+    color: rgb(190, 3, 3) !important;
+}
+
+.swiper-button-next{
+
+    color: rgb(190, 3, 3) !important;
+}
+

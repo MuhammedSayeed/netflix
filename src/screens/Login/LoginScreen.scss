@@ -1,0 +1,117 @@
+.loginScreen{
+    position: relative;
+    height: 100%;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/ac824598-245b-4828-b14f-5cff9074f4d0/2f9c6357-d498-4426-9be7-8fa23922d82b/EG-en-20220822-popsignuptwoweeks-perspective_alpha_website_large.jpg') center no-repeat;
+    background-size: cover;
+
+    .loginScreen_backGround{
+
+        .logoScreen_logo{
+
+            position: fixed;
+            left: 0;
+            width: 150px;
+            object-fit: contain;
+            padding-left: 20px;
+            top: 20px;
+
+        }
+
+        .loginScreen_button{
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            padding: 7px 22px;
+            font-size: 1rem;
+            color: white;
+            background-color: #cc0711;
+            border: none;
+            cursor: pointer;
+            transition: all ease-in-out .3s;
+
+            &:hover{
+                background-color: #b80b13;
+            }
+        }
+
+        .loginScreen_gradient{
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            background: rgba(0,0,0,0.4);
+            background-image: linear-gradient(
+                to top,
+                rgba(0,0,0,.8) 0 ,
+                rgba(0,0,0,0) 60% ,
+                rgba(0,0,0,0.8) 100%
+
+
+            );
+
+
+        }
+        .loginScreen_body{
+            color: white;
+            padding: 20px;
+            position: absolute;
+            top: 30%;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            left: 0;
+            right: 0;
+           
+
+
+            h1{
+                font-size: 3.125rem;
+                margin-bottom: 20px !important;
+            }
+            h3{
+                font-size: 2rem;
+                font-weight: 400;
+                margin-bottom: 30px !important;
+            }
+
+            h4{
+                font-size: 1.3rem;
+                font-weight: 400;
+                margin-bottom: 30px !important;
+               
+            }
+
+            .loginScreen_input{
+                form{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    input{
+                        padding: 14px 20px;
+                        outline-width: 0;
+                        
+                        width: 30%;
+                        border: none;
+                        max-width: 600px;
+                    }
+
+                    .loginScreen_getStarted{
+                        padding: 14px 20px;
+                        font-size: 1rem;
+                        color: white;
+                        background-color: #cc0711;
+                        border: none;
+                        margin-left: 2px;
+                        outline: none;
+                        transition: all ease-in-out .3s;
+                        cursor: pointer;
+                        &:hover{
+
+                            background-color: #b80b13;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

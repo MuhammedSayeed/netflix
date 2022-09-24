@@ -1,0 +1,97 @@
+.banner
+{
+    height: 720px;
+    position: relative;
+    object-fit: contain;
+    color: white;
+
+    .banner_contents
+    {
+        margin-left: 30px;
+        padding-top: 250px;
+        height: 190px;
+        position: absolute;
+        z-index: 999;
+        
+       
+
+        .banner_tittle
+        {
+            font-size: 3rem;
+            font-weight: 800;
+            padding-bottom: 0.3rem;
+            margin-bottom: 20px !important;
+            
+        }
+        .banner_desc
+        {
+            width: 100rem;
+            line-height: 1.3rem;
+            padding-top: 1rem;
+            font-size: 0.8rem;
+            max-width: 360px;
+            height: 80px;
+            font-size: 1rem;
+        }
+
+        .banner_buttons
+        {
+            .banner_button
+            {
+                cursor: pointer;
+                color: white;
+                outline: none;
+                border: none;
+                font-weight: 700;
+                border-radius: 0.3vw;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                margin-right: .7rem;
+                padding-top:0.5rem ;
+                padding-bottom: 0.5rem;
+                background: rgba(51, 51, 51,0.5);
+
+                &:hover
+                {
+                  color: rgb(255, 255, 255);
+                  background-color:#c00000;
+                  transition: all 0.4s ease-in-out; 
+                }
+
+            }
+        }
+
+    }
+
+    .banner_fade
+    {
+        height: 14rem;
+        background-image: linear-gradient(
+            180deg,
+            transparent,
+            rgba(15, 15, 15, 0.726),
+            rgb(10, 10, 10)
+        );
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        border-radius:0 ;
+
+    }
+
+    .banner_overlay{
+        position: absolute;
+        background: rgba(0, 0, 0, 0.096);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-radius:0 ;
+
+    }
+}
+
