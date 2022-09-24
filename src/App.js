@@ -52,7 +52,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter >
+      <HashRouter >
         {!user ?
           <LoginScreen />
           :
@@ -71,7 +71,7 @@ function App() {
           
         }
 
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
